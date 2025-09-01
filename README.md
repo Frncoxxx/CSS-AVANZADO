@@ -7,7 +7,7 @@ Los CSS Container Queries son el mismo concepto de las Media Queries, pero en lu
 Para empezar tenemos que determinar cuál será el elemento contenedor al que vamos a hacer referencia. En dicho elemento, necesitaremos establecer las siguientes propiedades:
 ###Propiedades:
 
-+ **container-name:** La propiedad container-name le da un nombre de contenedor al elemento en el que nos encontramos. Sin este nombre no podremos hacer referencia luego, en la regla @container.
+**Propiedad container-name:** La propiedad container-name le da un nombre de contenedor al elemento en el que nos encontramos. Sin este nombre no podremos hacer referencia luego, en la regla @container.
 
 **EJEMPLO**
 
@@ -17,7 +17,7 @@ Para empezar tenemos que determinar cuál será el elemento contenedor al que va
 }
 ```
 
-+ **container-type:** La propiedad container-type, establece el tipo de tamaño que va a tener el contenedor en cuestión, donde puede ser:
+**Propiedad container-type:** La propiedad container-type, establece el tipo de tamaño que va a tener el contenedor en cuestión, donde puede ser:
  - size: Elementos de tipo bloque (alto y ancho).
  -  inline-size: Elementos de tipo linea (solo ancho).
  
@@ -28,7 +28,7 @@ Para empezar tenemos que determinar cuál será el elemento contenedor al que va
   container-type: inline-size;
 }
 ```
-+ **container:** En esta propiedad podemos indicar **dos valores**, el valor de la propiedad **container-name** y el valor de la propiedad **container-type**, pero siempre separadas por un **/**.
+**Propiedad container:** En esta propiedad podemos indicar **dos valores**, el valor de la propiedad **container-name** y el valor de la propiedad **container-type**, pero siempre separadas por un **/**.
 
 **EJEMPLO**
 
