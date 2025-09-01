@@ -6,7 +6,7 @@ Los CSS Container Queries son el mismo concepto de las Media Queries, pero en lu
 ### ELEMENTO CONTENEDOR
 Para empezar tenemos que determinar cuál será el elemento contenedor al que vamos a hacer referencia. En dicho elemento, necesitaremos establecer las siguientes propiedades:
 
-###Propiedades:
+### Propiedades:
 
 **Propiedad container-name:** La propiedad container-name le da un nombre de contenedor al elemento en el que nos encontramos. Sin este nombre no podremos hacer referencia luego, en la regla @container.
 
