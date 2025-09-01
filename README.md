@@ -39,7 +39,7 @@ Para empezar tenemos que determinar cuál será el elemento contenedor al que va
 }
 ```
 ------------
-###REGLA CONTAINER
+### REGLA CONTAINER
 Una vez tenemos nuestro contenedor definido, debemos establecer una regla @container que es muy parecido a las reglas @media, pero en este caso establece una condición para aplicar estilos a un contenedor en concreto.
 
 **SINTAXIS**
