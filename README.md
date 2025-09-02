@@ -55,7 +55,7 @@
 
 [CAPITULO 7]
 
-[CAPITULO 8]
+[CAPITULO 8 - Propiedades y Contenedores CSS (Container Queries)]
 
 [CAPITULO 9]
 
