@@ -197,9 +197,8 @@ Es decir, mientras que filter afecta directamente al elemento y a todo lo que co
     backdrop-filter: blur(10px);
 }
 ```
-##REFERENCIAS:
+## REFERENCIAS:
 - Manz. (s. f.).  Filtros CSS En LenguajeCSS.com. 
 https://lenguajecss.com/css/efectos/filtros-css/
-##REFERENCIAS:
 - Manz. (s. f.). CSS Container Queries En LenguajeCSS.com. 
 https://lenguajecss.com/css/responsive-web-design/css-container-queries/
