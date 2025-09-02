@@ -60,3 +60,25 @@ Una vez tenemos nuestro contenedor definido, debemos establecer una regla @conta
   }
 }
 ```
+
+------------
+
+### UNIDADES DE CONTENEDORES
+Cuando nos encontramos en el interior de una regla @container podemos utilizar ciertas unidades especiales como cqw, cqh, cqi, cqb, cqmin o cqmax.
+Los componentes que usan unidades de longitud relativas a su contenedor son más flexibles para su uso en diferentes contenedores sin tener que recalcular valores de longitud concretos.
+
+**Las unidades de longitud de la consulta del contenedor son:**
+- cqw: 1% del ancho de un contenedor de consulta
+- cqh: 1% de la altura de un contenedor de consulta
+- cqi: 1% del tamaño en línea de un contenedor de consulta
+- cqb: 1% del tamaño del bloque de un contenedor de consulta
+- cqmin: El valor más pequeño de uno cqi o cqb
+- cqmax: El valor mayor de uno cqi u otro cqb
+
+```css
+@container (width > 700px) {
+  .card h2 {
+    font-size: max(1.5em, 1.23em + 2cqi);
+  }
+}
+```
