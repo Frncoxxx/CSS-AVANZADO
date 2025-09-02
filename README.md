@@ -1,204 +1,66 @@
-# CAPITULO 8 - Propiedades y Contenedores CSS (Container Queries)
-Los CSS Container Queries son el mismo concepto de las Media Queries, pero en lugar de estar orientados a modificar los estilos dependiendo del tamaño de la página o dispositivo (viewport), lo hace dependiendo de un contenedor padre (o ancestro). De esta forma, podemos cambiar el tamaño de ciertos elementos y hacer que tengan una forma o unos estilos dependiendo del contexto donde se encuentren.
+<h1 align="center">UNIVERSIDAD NACIONAL DEL CENTRO DEL PERÚ</h1>
 
-------------
+<div align="center">   
+    <img width="400" height="350" src="https://upload.wikimedia.org/wikipedia/commons/9/92/Escudo_UNCP.png" />
+</div>
 
-### ELEMENTO CONTENEDOR
-Para empezar tenemos que determinar cuál será el elemento contenedor al que vamos a hacer referencia. En dicho elemento, necesitaremos establecer las siguientes propiedades:
+<h2 align="center">
+    <p>FACULTAD DE INGENIERÍA DE SISTEMAS</p>
+    <p>DESARROLLO DE APLICACIONES WEB</p>
+</h2>
 
-#### PROPIEDADES
+<h2 align="center">
+     Conocimientos avanzados del lenguaje de diseño CSS
+</h2>
 
-**Propiedad container-name:** La propiedad container-name le da un nombre de contenedor al elemento en el que nos encontramos. Sin este nombre no podremos hacer referencia luego, en la regla @container.
+**PRESENTADO POR:**
 
-**ejemplo:**
+◼️Cerrón Pizarro Sebastián José
 
-```css
-.container {
-  container-name: titulo;
-}
-```
+◼️Huaire Maravi Edison Orlando
 
-**Propiedad container-type:** La propiedad container-type, establece el tipo de tamaño que va a tener el contenedor en cuestión, donde puede ser:
- - size: Elementos de tipo bloque (alto y ancho).
- -  inline-size: Elementos de tipo linea (solo ancho).
- 
-**ejemplo**
-```css
- .container {
-  container-name: titulo;
-  container-type: inline-size;
-}
-```
-**Propiedad container:** En esta propiedad podemos indicar **dos valores**, el valor de la propiedad **container-name** y el valor de la propiedad **container-type**, pero siempre separadas por un **/**.
+◼️Huaman Huaynatez Jean Franco
 
-**ejemplo**
+◼️Janampa Choccelahua Gian Alessandro
 
-```css
- .container {
-  container: titulo / inline-size;
-}
-```
-------------
-### REGLA CONTAINER
-Una vez tenemos nuestro contenedor definido, debemos establecer una regla @container que es muy parecido a las reglas @media, pero en este caso establece una condición para aplicar estilos a un contenedor en concreto.
+◼️Mateo Cabello Raúl Julián
 
-**SINTAXIS**
-```css
-@container <nombre del contenedor> (<condición>)
-```
-**Ejemplo**
-```css
-.container {
-  border: 1px solid red;
-  color: black;
-  container: titulo;
-}
+◼️Ramirez Buitrón Kenyo Wilder
 
-@container logo (width <= 550px) {
-  .h1 {
-    color: blue;
-  }
-}
-```
+<h2 align="center">
+    <p>HUANCAYO -- PERÚ</p>
+    <p>2025</p>
+</h2>
 
-------------
+---
 
-### UNIDADES DE CONTENEDORES
-Cuando nos encontramos en el interior de una regla @container podemos utilizar ciertas unidades especiales como cqw, cqh, cqi, cqb, cqmin o cqmax.
-Los componentes que usan unidades de longitud relativas a su contenedor son más flexibles para su uso en diferentes contenedores sin tener que recalcular valores de longitud concretos.
+# ÍNDICE
 
-**Las unidades de longitud de la consulta del contenedor son:**
-- cqw: 1% del ancho de un contenedor de consulta
-- cqh: 1% de la altura de un contenedor de consulta
-- cqi: 1% del tamaño en línea de un contenedor de consulta
-- cqb: 1% del tamaño del bloque de un contenedor de consulta
-- cqmin: El valor más pequeño de uno cqi o cqb
-- cqmax: El valor mayor de uno cqi u otro cqb
 
-```css
-@container (width > 700px) {
-  .card h2 {
-    font-size: max(1.5em, 1.23em + 2cqi);
-  }
-}
-```
+[ÍNDICE]
 
-# CAPITULO 9 - Filtros y Efectos Visuales avanzados
+[INTRODUCCIÓN]
 
-Los filtros en CSS permiten añadir efectos visuales, como sepia, ajustes de brillo, contraste u otros, directamente desde el navegador y de manera instantánea, sin modificar de forma permanente la imagen original.
+[CAPITULO 1 - Variables CSS y Custom Properties]
 
-Se pueden aplicar desde dos propiedades CSS diferentes:
+[CAPITULO 2 - Funciones CSS (calc(), clamp(), min(), max())]
 
-Propiedad  | Descripción
-------------- | -------------
-Filter  | Aplica un filtro concreto a un elemento HTML y todos los de su interior.
-backdrop-filter  | 	Aplica un filtro concreto al fondo de un elemento HTML, sin que afecte a su interior.
+[CAPITULO 3 - Grid Layout Avanzado (Áreas de grid, auto-fit, auto-fill)]
 
-### PROPIEDAD FILTER
-filter acepta funciones de filtrado (por ejemplo, blur(), brightness(), contrast(), grayscale(), sepia()) que modifican la representación visual del elemento en el renderizado final de la página.
-```css
-img {
-  filter: grayscale(100%);
-  transition: filter 1s;
-  width: 200px;
-}
+[CAPITULO 4 - Flexbox avanzado (Alineaciones, distribución dinámica)]
 
-img:hover {
-  filter: grayscale(0%);
-}
-```
-#### FUNCIONES DE FILTROS
-Función  | Significado | Valor
-------------- | ------------- | -------------
-grayscale  | Escala de blanco y negro | percent - number
-blur | 	Desenfoque Gausiano | size
-sepia | Grado de color sepia | percent - number
-saturate | Grado de saturación | percent - number
-opacity | Grado de transparencia | percent - number
-brightness | Brillo | percent - number
-contrast | Contraste | percent - number
-hue-rotate | Rotación de color (matiz) | angle
-invert | Invertir | percent - number
-drop-shadow | Sombra idéntica | posx posy size color
+[CAPITULO 5 - Diseño responsivo (Media Queries y Mobile-first)]
 
-**PORCENTAJES O NÚMEROS**
-- PERCENT: Valor porcentual (0%, 50%,100%,....)
-- NUMBER: Valor númerico (0, 0.5, 1,.....)
+[CAPITULO 6 - Scroll Snap y Técnicas de Scroll]
 
-**ejemplo grayscale**
-```css
-#img1 {
-    filter: grayscale(100%);
-}
-```
-**ejemplo blur**
-```css
-#img2 {
-    filter: blur(5px);
-}
-```
-**ejemplo sepia**
-```css
-#img3 {
-    filter: sepia(100%);
-}
-```
-**ejemplo saturate**
-```css
-#img4 {
-    filter: saturate(200%);
-}
-```
-**ejemplo opacity**
-```css
-#img5 {
-    filter: opacity(50%);
-}
-```
-**ejemplo brigthness **
-```css
-#img6 {
-    filter: brightness(230%);
-}
-```
-**ejemplo contrast**
-```css
-#img7 {
-    filter: contrast(250%);
-}
-```
-**ejemplo invert**
-```css
-#img8 {
-    filter: invert(80%);
-}
-```
-**ejemplo hue-rotate**
-```css
-#img9 {
-    filter: hue-rotate(230deg);
-}
-```
-**ejemplo drop-shadow**
-```css
-#img10 {
-    filter: drop-shadow(5px 5px 10px black);
-}
-```
+[CAPITULO 7 - Clipping y Masking con CSS]
 
-### PROPIEDAD BACKDROP-FILTER
-La propiedad backdrop-filter en CSS sirve para aplicar efectos visuales (como desenfoque, brillo, contraste, etc.) al fondo que hay detrás de un elemento, sin alterar el contenido interno de ese mismo elemento.
+[CAPITULO 8]
 
-Es decir, mientras que filter afecta directamente al elemento y a todo lo que contiene, backdrop-filter solo modifica la parte del fondo que se ve a través del elemento.
+[CAPITULO 9]
 
-**ejemplo**
-```css
-#img11 {
-    backdrop-filter: blur(10px);
-}
-```
-## REFERENCIAS:
-- Manz. (s. f.).  Filtros CSS En LenguajeCSS.com. 
-https://lenguajecss.com/css/efectos/filtros-css/
-- Manz. (s. f.). CSS Container Queries En LenguajeCSS.com. 
-https://lenguajecss.com/css/responsive-web-design/css-container-queries/
+[CAPITULO 10 - Técnicas de Performance y Optmización en CSS]
+
+[CONCLUSIÓN]
+
+[REFERENCIA BIBLIOGRÁFICA]
