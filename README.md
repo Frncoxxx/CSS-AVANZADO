@@ -285,6 +285,7 @@ Los componentes que usan unidades de longitud relativas a su contenedor son más
 }
 ```
 # CAPITULO 9 - Filtros y Efectos Visuales avanzados
+
 Los filtros en CSS permiten añadir efectos visuales, como sepia, ajustes de brillo, contraste u otros, directamente desde el navegador y de manera instantánea, sin modificar de forma permanente la imagen original.
 
 Se pueden aplicar desde dos propiedades CSS diferentes:
@@ -309,7 +310,7 @@ img:hover {
 ```
 #### FUNCIONES DE FILTROS
 Función  | Significado | Valor
-------------- | -------------
+------------- | ------------- | -------------
 grayscale  | Escala de blanco y negro | percent - number
 blur | 	Desenfoque Gausiano | size
 sepia | Grado de color sepia | percent - number
