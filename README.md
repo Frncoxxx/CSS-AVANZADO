@@ -55,9 +55,9 @@
 
 [CAPITULO 7 - Clipping y Masking con CSS]
 
-[CAPITULO 8]
+[CAPITULO 8 - Container Queries]
 
-[CAPITULO 9]
+[CAPITULO 9 - Filtros y Efectos Visuales avanzados]
 
 [CAPITULO 10 - Técnicas de Performance y Optmización en CSS]
 
